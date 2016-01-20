@@ -26,7 +26,7 @@ public class HelloWorldSpring {
                     factory);
             // load the configuration options
             Properties props = new Properties();
-            props.load(new FileInputStream("beans.properties"));
+            props.load(new FileInputStream("/Users/digibrose/LTMSc/SDP/exercises/week2/HelloWorldSpring/src/bean.properties"));
             rdr.registerBeanDefinitions(props);
             return factory;
         }

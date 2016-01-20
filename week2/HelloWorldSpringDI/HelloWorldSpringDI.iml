@@ -6,8 +6,8 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
-    <output url="file://$MODULE_DIR$/../../out" />
-    <output-test url="file:///test/HelloWorldSpring" />
+    <output url="file:///production/HelloWorldSpringDI" />
+    <output-test url="file:///test/HelloWorldSpringDI" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
