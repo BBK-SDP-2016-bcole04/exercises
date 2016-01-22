@@ -12,7 +12,7 @@ public class AppP {
     public static void main(String[] args){
         String[] Inp = {"a", "b", "c"};
         Model Mod = new Model(Inp);
-        View Window = new View(Mod);
+        View Window = new View();
         ControllerP Cont = new ControllerP(Mod, Window);
         Window.setActionListener(Cont);
     }

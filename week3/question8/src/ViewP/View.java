@@ -1,7 +1,5 @@
 package ViewP;
 
-import ModelP.Model;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -12,12 +10,10 @@ import java.awt.event.ActionListener;
 public class View extends JFrame {
 
     private JButton But;
-    private Model Model;
     private ActionListener AL;
 
-    public View(Model model) {
+    public View() {
 
-        this.Model = model;
 
         But = new JButton("Clickable");
 
