@@ -11,7 +11,11 @@ public class SingleLazy {
 
     public static SingleLazy getInstance(){
         if(instance == null){
-            instance = new SingleLazy();
+            synchronized(SingleLazy.class) {
+                if (instance==null) {
+                    instance = new SingleLazy();
+                }
+            }
         }
         return instance;
     }

@@ -9,7 +9,7 @@ private static Singleton instance = new Singleton();
 
     }
 
-    public static Singleton getInstance(){
+    public static synchronized Singleton getInstance(){
         return instance;
     }
 
