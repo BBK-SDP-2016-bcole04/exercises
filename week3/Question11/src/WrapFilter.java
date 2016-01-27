@@ -22,20 +22,29 @@ public class WrapFilter {
 
     }
 
-    public void print(String S){
-
-        for(int i=0;i<S.length();i++){
-            chararr = new char[S.length()];
-            chararr[i]= S.charAt(i);
-        }
-
-
-        try {
-            bufferedWriter.write(chararr);
-        } catch (IOException e) {
+    public void print(String S) {
+        int j=0;
+        chararr = new char[S.length()];
+        for (int i = 0; i < S.length(); i++) {
+            chararr[j] = S.charAt(i);
+            //   System.out.print(chararr[i]);
+            try {
+                bufferedWriter.write(chararr[j]);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            if (j==15) {
+            j=0;
+            try     {
+            bufferedWriter.flush();
+            } catch (IOException e) {
             e.printStackTrace();
+            }
         }
-        try {
+        j++;
+    }
+
+       try {
             bufferedWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();

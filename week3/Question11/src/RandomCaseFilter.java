@@ -19,8 +19,8 @@ public class RandomCaseFilter extends Writer {
 
     @Override
     public void write(char[] cbuf, int off, int len) throws IOException {
-        printWriter.println("crap");
-        printWriter.close ();
+        printWriter.println(cbuf);
+     //   printWriter.close ();
     }
 
 

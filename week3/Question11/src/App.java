@@ -57,7 +57,11 @@ public class App {
 
         WrapFilter WF = new WrapFilter(new BufferedWriter(new RandomCaseFilter(new PrintWriter(System.out))),15);
 
-        WF.print("Bollocks");
+        try {
+            WF.print("This should be centered");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         //       out.setCenter(true);
 
