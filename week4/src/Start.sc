@@ -34,8 +34,6 @@ val t1 = Arg1GreaterThanArg2(4.1, 4.12)
 //assert(t1 == true)
 assert(t1 == false)
 val t2 =Arg1GreaterThanArg2(2.1, 1.2)
-
-
 def manyTimesString(S: String, num: Integer): String = {
     var i = 0
     var SS: String = ""
@@ -48,6 +46,28 @@ def manyTimesString(S: String, num: Integer): String = {
   }
 
   var SN = manyTimesString("Test ", 2)
+val m1 = manyTimesString("abc", 3)
+assert("abcabcabc" == m1, "correct")
+val m2 = manyTimesString("123", 2)
+assert("123123" == m2, "Your message here")
+object Range{
+  def Step(low: Integer, high: Integer): String ={
+    var i=low
+    var S=""
+    while(i <= high){
+      S = S + i + " "
+      i = i+1
+    }
+    S
+  }
+
+}
+
+Range.Step(1,4)
+
+
+
+
 
 
 
