@@ -84,13 +84,11 @@ val Gerald = new Monkey
 val Sydney = new Giraffe
 println(edna)
 val doris = new Hippo
-
 println(doris)
 
 class Sailboat{
   def Raise(): String ="Sails Raised"
   def Lower(): String ="Sails Lowered"
-
   def signal(): String = {
     val F = new Flare
     F.light()
@@ -114,7 +112,6 @@ val sailboat = new Sailboat
 val r1 = sailboat.Raise()
 
 assert(r1 == "Sails Raised", "Expected Sails Raised, Got " + r1)
-
 val r2 = sailboat.Lower()
 assert(r2 == "Sails Lowered", "Expected Sails Lowered, Got " + r2)
 val motorboat = new Motorboat
@@ -125,7 +122,6 @@ assert(mo2 == "Motor Off", "Expected Motor Off, Got " + mo2)
 class Flare(){
   def light(): String = "Flare used!"
 }
-
 val flare = new Flare
 val f1 = flare.light
 assert(f1 == "Flare used!", "Expected Flare used!, Got " + f1)
@@ -159,13 +155,10 @@ val cup = new Cup
 cup.add(45)
 cup.add(-15)
 cup.add(-50)
-
-
 import java.io.FileWriter
 import scala.language.implicitConversions
 class AtomicTest[T](val target: T) {
   val errorLog = "_AtomicTestErrors.txt"
-
   def tst[E](expected: E)(test: => Boolean) {
     println(target)
     if (test == false) {
@@ -207,22 +200,16 @@ cup.add(-55) is 0
 cup.add(10) is 10
 cup.add(-9) is 1
 cup.add(-2) is 0
-
 cup.percentFull = 56
 cup.percentFull is 56
-
-
 cup.set(56)
 cup.get() is 56
-
 val v1 = Vector(1, 2, 3, 4)
 val v2 = Vector(new Cup, new Cup, new Cup)
 val v3 = Vector("one", "two", "three")
-
 val v4 = Vector(v1, v2, v3)
 
 val v5 = Vector("The ", "dog ", "visited ", "the ", "fire ", "station")
-
 var string1 = ""
 
 for (s <- v5){
@@ -233,13 +220,11 @@ println(string1)
 
 val v6 = Vector(1, 2, 3, 4)
 val v7 = Vector(1.0, 1.1, 1.2, 1.3)
-
 v6.sum
 v7.sum
 
 v6.min
 v7.min
-
 cup.get
 
 v6.max
@@ -249,8 +234,6 @@ val myVector1 = Vector(1, 2, 3, 4, 5, 6)
 val myVector2 = Vector(1, 2, 3, 4, 5, 6)
 
 myVector1.equals(myVector2) is true
-
-
 
 
 
