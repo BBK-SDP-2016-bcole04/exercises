@@ -11,7 +11,7 @@
             It is because the wiring requirement is specified through
             @Autowired annotation  -->
     <bean id="renderer"
-          class="autoscan.StandardOutMessageRenderer">
+          class="StandardOutMessageRenderer">
     </bean>
 
     <bean id="provider"

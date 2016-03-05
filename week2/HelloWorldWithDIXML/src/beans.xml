@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="renderer" class="autoscan.StandardOutMessageRenderer">
+    <bean id="renderer" class="StandardOutMessageRenderer">
         <property name="messageProvider" ref="provider"/>
     </bean>
-    <bean id="provider" class="autoscan.HelloWorldMessageProvider"/>
+    <bean id="provider" class="HelloWorldMessageProvider"/>
 
 </beans>

@@ -23,7 +23,7 @@ public class HelloWorldSpringWithDI {
                 factory);
         // load the configuration options
         Properties props = new Properties();
-        props.load(new FileInputStream("/Users/digibrose/LTMSc/SDP/exercises/week2/HelloWorldSpringDI/beans.properties"));
+        props.load(new FileInputStream("/Users/digibrose/LTMSc/SDP/exercises/week2/HelloWorldSpringDI/src/beans.properties"));
         rdr.registerBeanDefinitions(props);
         return factory;
     }
