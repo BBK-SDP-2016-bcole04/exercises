@@ -17,6 +17,9 @@ S = "DEF1234"
 val num2 = 15.56
 
 println(num2)
+
+//Expressions
+
 var sky = "sunny"
 var temp = 90
 val nice = sky.equals("sunny") && temp > 80
@@ -25,6 +28,9 @@ sky = "partly cloudy"
 variable
 var Cel = 5*(temp - 32.0 )/9
 var Far = (9*Cel)/5 + 32
+
+//Methods
+
 def getSquare(num : Integer) = num*num
 getSquare(3)
 getSquare(9)
@@ -64,6 +70,9 @@ assert("123123" == m2, "Your message here")
 
 }
 */
+
+//Classes and Objects
+
 val R1 = Range(1, 10)
 val R2 = Range(1, 10, 2)
 var s1 = "Sally"
@@ -71,6 +80,8 @@ var s2 = "Sally"
 assert(s1.equals(s2))
 val eq:Boolean =  s1.equals(s2)
 //if (eq) {println("equal")} else {println"not equal"}
+
+//Creating Classes
 
 class Hippo
 class Lion
@@ -85,6 +96,8 @@ val Sydney = new Giraffe
 println(edna)
 val doris = new Hippo
 println(doris)
+
+//Methods In Classes
 
 class Sailboat{
   def Raise(): String ="Sails Raised"
@@ -131,6 +144,9 @@ assert(signal == "Flare used!", "Expected Flare used! Got " + signal)
 val motorboat2 = new Motorboat
 val flare2 = motorboat2.signal()
 assert(flare2 == "Flare used!", "Expected Flare used!, Got " + flare2)
+
+//Fields In Classes
+
 class Cup {
   var percentFull = 0
   val max = 100
@@ -157,6 +173,7 @@ cup.add(-15)
 cup.add(-50)
 import java.io.FileWriter
 import scala.language.implicitConversions
+
 class AtomicTest[T](val target: T) {
   val errorLog = "_AtomicTestErrors.txt"
   def tst[E](expected: E)(test: => Boolean) {
@@ -229,6 +246,8 @@ cup.get
 
 v6.max
 v7.max
+
+//Vectors
 
 val myVector1 = Vector(1, 2, 3, 4, 5, 6)
 val myVector2 = Vector(1, 2, 3, 4, 5, 6)
