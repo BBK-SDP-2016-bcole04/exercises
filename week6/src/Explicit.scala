@@ -28,11 +28,9 @@ Vector[Char] = {
   def explicitString(c1: Char, c2: Char, c3: Char, c4: Char): String ={
     val v1 = List(c1, c2, c3, c4)
     val comma : Char= ','
-    val v2 = List(comma, comma, comma)
-    val v3 = (v1 zip v2)
-    val v4 = v3.flatten
-    println(v3)
-    v3.toString()
+    val v2 = List(comma, comma, comma, comma)
+    val v3 = (v1 zip v2).flatMap(_.productIterator.map(_.toString)).mkString
+    v3
   }
 
 
@@ -44,5 +42,5 @@ Vector[Char] = {
   explicitList(Vector(1, 2, 3)) is List(1.0, 2.0, 3.0)
   explicitSet(Vector(10.0, 20.0, 10.0)) is Set(10.0, 20.0)
   explicitSet(Vector(1, 2, 3, 2, 3, 4)) is Set(1.0, 2.0, 3.0, 4.0)
- // explicitString('1', '2', '3', '4') is "1,2,3,4"
+  explicitString('1', '2', '3', '4') is "1,2,3,4,"
 }
